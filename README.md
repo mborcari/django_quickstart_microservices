@@ -20,11 +20,10 @@ pyenv virtualenv $VERSION_PYTHON $PROJECT_NAME && \
 pyenv activate $PROJECT_NAME && \
 pip install --upgrade pip && \
 pip install django
-django-admin startproject --template https://github.com/mborcari/template_python_microservices/archive/master.zip --name=Procfile,.env,pytest.ini $PROJECT_NAME . && \
+django-admin startproject --template https://github.com/mborcari/template_python_microservices/archive/main.zip --name=Procfile,.env,pytest.ini $PROJECT_NAME . && \
 pip install --prefer-binary -r requirements-dev.txt && \
 git init && \
 git add . && \\
 git commit -m 'Initial import' && \
 docker-compose up
 ```
-"# django_quickstart_microservices" 
