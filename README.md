@@ -5,7 +5,7 @@ This template was based from https://github.com/henriquebastos/django-quickstart
 **This quickstart project considers:**
 
 - Use pyenv and virtualenv for management environment;
-- Stack Django, DjangoRest, Postgres, Pike;
+- Stack Django, DjangoRest, Postgre, Pike;
 - Docker and Docker-compose.
 - And git!
 
