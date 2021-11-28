@@ -1,6 +1,6 @@
 version: '3.8'
 services:
-  backend:
+  {{ project_name }}_backend:
     build:
       context: .
       dockerfile: Dockerfile
@@ -11,7 +11,7 @@ services:
       - .:/app
     depends_on:
       - db
-  pgdb:
+  {{ project_name }}_pgdb:
     image: postgres:13
     container_name: pgdb
     environment:
