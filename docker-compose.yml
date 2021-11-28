@@ -13,7 +13,7 @@ services:
       - db
   {{ project_name }}_pgdb:
     image: postgres:13
-    container_name: { project_name }}_pgdb
+    container_name: {{ project_name }}_pgdb
     environment:
       - POSTGRES_DB=postgres
       - POSTGRES_USER=postgres
